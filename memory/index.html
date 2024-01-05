@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="niceSelect/docs/dist/css/nice-select2.css">    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="products" id="memory">
+        <h1>Memory</h1>
+        <h5>Starta spelet genom att välja tid</h5>
+        <div class="contact__content">
+            <div class="wrapper">
+                <ul class="cards"></ul>
+                <div class="details">
+                    <select id="time-select" class="nice-select"></select>
+                    <p>Tid: <span id="timer"></span></p>
+                    <p>Antal:&nbsp; <b id="flips"> </b></p>
+                    <button class="reset-button">Starta om</button>
+                </div>
+            </div>
+        </div>
+        <h5 style="padding-top: 25px; width: 450px; margin: auto; line-height: 20px;">(Efter flera timmars googling, så kom jag fram till att pga <u style="text-decoration: underline;">nice-select</u> så buggar den med min dropdown så det går inte att köra selectedIndex = 0 och få select elementet att gå tillbaka till sitt ursprungliga värde <b style="text-decoration: underline;">visuellt</b> när man klickar på reset knappen. Därför, välj en ny tid så startar spelet igen.)</h5>
+    </section>
+    <script src="niceSelect/docs/dist/js/nice-select2.js"></script>
+    <script src="G.js"></script>
+    <script src="VG.js"></script>
+</body>
+</html>
